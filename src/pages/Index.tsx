@@ -3,10 +3,8 @@ import Hero from "@/components/Hero";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Github, Linkedin, Mail } from "lucide-react";
-
 const Index = () => {
-  return (
-    <div className="min-h-screen">
+  return <div className="min-h-screen">
       <Navbar />
       <Hero />
       
@@ -21,7 +19,7 @@ const Index = () => {
             </Card>
             <Card className="p-6 hover-lift">
               <h3 className="text-xl font-semibold text-primary mb-2">Asian Institute of Technology</h3>
-              <p className="text-muted-foreground">VR EdTech research intern developing immersive learning solutions</p>
+              <p className="text-muted-foreground">Virtual Reality EdTech research intern developing immersive learning solutions for specially abled children</p>
             </Card>
             <Card className="p-6 hover-lift">
               <h3 className="text-xl font-semibold text-primary mb-2">Fincrux Technologies</h3>
@@ -40,21 +38,28 @@ const Index = () => {
         <div className="max-w-7xl mx-auto">
           <h2 className="text-4xl font-bold text-center mb-12">Projects</h2>
           <div className="grid md:grid-cols-3 gap-6">
-            {[
-              { title: "File Sharing App", tech: "React, Node, MongoDB" },
-              { title: "CPU Scheduler", tech: "C++" },
-              { title: "Superstore Billing", tech: "C++" },
-              { title: "Sales Forecasting", tech: "Python" },
-              { title: "Food Website", tech: "AWS Hosted" },
-            ].map((project) => (
-              <Card key={project.title} className="p-6 hover-lift">
+            {[{
+            title: "File Sharing App",
+            tech: "React, Node, MongoDB"
+          }, {
+            title: "CPU Scheduler",
+            tech: "C++"
+          }, {
+            title: "Superstore Billing",
+            tech: "C++"
+          }, {
+            title: "Sales Forecasting",
+            tech: "Python"
+          }, {
+            title: "Food Website",
+            tech: "AWS Hosted"
+          }].map(project => <Card key={project.title} className="p-6 hover-lift">
                 <h3 className="text-lg font-semibold mb-2">{project.title}</h3>
                 <p className="text-sm text-muted-foreground mb-4">{project.tech}</p>
                 <Button variant="outline" size="sm">
                   <Github className="h-4 w-4 mr-2" /> View Code
                 </Button>
-              </Card>
-            ))}
+              </Card>)}
           </div>
         </div>
       </section>
@@ -131,8 +136,6 @@ const Index = () => {
         </div>
         <p className="text-sm opacity-80">© 2025 Jayaditya Sahu. All rights reserved.</p>
       </footer>
-    </div>
-  );
+    </div>;
 };
-
 export default Index;
