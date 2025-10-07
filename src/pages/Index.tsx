@@ -3,7 +3,12 @@ import Hero from "@/components/Hero";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Github, Linkedin, Mail } from "lucide-react";
+import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
+import { ContactForm } from "@/components/ContactForm";
+import { useState } from "react";
 const Index = () => {
+  const [isContactDialogOpen, setIsContactDialogOpen] = useState(false);
+  
   return <div className="min-h-screen">
       <Navbar />
       <Hero />
@@ -110,11 +115,28 @@ const Index = () => {
             Looking for opportunities in software development, ML, and AI research. Let's build something amazing together!
           </p>
           <div className="flex justify-center gap-4 mb-8">
-            <Button size="lg" className="bg-primary hover:bg-primary-dark">
-              <Mail className="mr-2 h-4 w-4" /> Email Me
-            </Button>
-            <Button size="lg" variant="outline">
-              Hire Me
+            <Dialog open={isContactDialogOpen} onOpenChange={setIsContactDialogOpen}>
+              <DialogTrigger asChild>
+                <Button size="lg" className="bg-primary hover:bg-primary-dark">
+                  <Mail className="mr-2 h-4 w-4" /> Email Me
+                </Button>
+              </DialogTrigger>
+              <DialogContent className="sm:max-w-[600px]">
+                <DialogHeader>
+                  <DialogTitle>Send me a message</DialogTitle>
+                  <DialogDescription>
+                    Fill out the form below and I'll get back to you as soon as possible.
+                  </DialogDescription>
+                </DialogHeader>
+                <ContactForm onSuccess={() => setIsContactDialogOpen(false)} />
+              </DialogContent>
+            </Dialog>
+            <Button 
+              size="lg" 
+              variant="outline"
+              asChild
+            >
+              <a href="mailto:jayaditya.sahu@gmail.com">Direct Email</a>
             </Button>
           </div>
         </div>
