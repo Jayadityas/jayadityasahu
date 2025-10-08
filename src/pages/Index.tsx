@@ -111,6 +111,13 @@ const Index = () => {
               As someone who leads with curiosity and learns through building, my mission is to craft technology that improves lives, inspires teams, and sets new benchmarks of innovation.
             </p>
           </div>
+          <div className="mt-8">
+            <Button size="lg" asChild>
+              <a href="/Jayaditya-Sahu-Resume.pdf" download="Jayaditya-Sahu-Resume.pdf">
+                Download Resume
+              </a>
+            </Button>
+          </div>
         </div>
       </section>
 
