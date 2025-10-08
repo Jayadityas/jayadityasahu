@@ -45,24 +45,27 @@ const Index = () => {
           <div className="grid md:grid-cols-3 gap-6">
             {[{
             title: "File Sharing App",
-            tech: "React, Node, MongoDB"
+            tech: "React, Node, MongoDB",
+            github: "https://github.com/Jayadityas/File_sharing_App.git"
           }, {
             title: "CPU Scheduler",
-            tech: "C++"
+            tech: "C++",
+            github: "https://github.com/Jayadityas/CPU_scheduler.git"
           }, {
             title: "Superstore Billing",
-            tech: "C++"
+            tech: "C++",
+            github: "https://github.com/Jayadityas/Supermarket_bill_system.git"
           }, {
-            title: "Sales Forecasting",
-            tech: "Python"
-          }, {
-            title: "Food Website",
-            tech: "AWS Hosted"
+            title: "Algo Online Judge",
+            tech: "MERN Stack",
+            github: "https://github.com/Jayadityas/AlgoOJ.git"
           }].map(project => <Card key={project.title} className="p-6 hover-lift">
                 <h3 className="text-lg font-semibold mb-2">{project.title}</h3>
                 <p className="text-sm text-muted-foreground mb-4">{project.tech}</p>
-                <Button variant="outline" size="sm">
-                  <Github className="h-4 w-4 mr-2" /> View Code
+                <Button variant="outline" size="sm" asChild>
+                  <a href={project.github} target="_blank" rel="noopener noreferrer">
+                    <Github className="h-4 w-4 mr-2" /> View Code
+                  </a>
                 </Button>
               </Card>)}
           </div>
