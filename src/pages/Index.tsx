@@ -99,7 +99,13 @@ const Index = () => {
       {/* About */}
       <section id="about" className="py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-4xl font-bold mb-6">About Me</h2>
+          <h2 className="text-4xl font-bold mb-6">I’m a results-driven software developer and machine learning enthusiast passionate about transforming ideas into intelligent, reliable, and human-centric systems.
+
+ Currently pursuing B.Tech in Computer Science and Engineering at IIT Bhubaneswar, I’ve built solutions across MERN stack development, predictive analytics, and cloud deployment while contributing to research that blends AI and education.
+
+I value efficiency, clarity, and purpose in every project ,whether it’s optimizing performance, simplifying user experience, or scaling architecture for impact. With hands-on experience at organizations like AlgoUniversity, Fincrux Technologies, and the Asian Institute of Technology in Bangkok, I bring a strong balance of technical execution and strategic problem-solving.
+
+As someone who leads with curiosity and learns through building, my mission is to craft technology that improves lives, inspires teams, and sets new benchmarks of innovation.</h2>
           <p className="text-lg text-muted-foreground mb-6">I’m a results-driven software developer and machine learning enthusiast passionate about transforming ideas into intelligent, reliable, and human-centric systems. Currently pursuing B.Tech in CSE at IIT Bhubaneswar, I’ve built solutions across MERN stack development, predictive analytics, and cloud deployment while contributing to research that blends AI and education.
 
 I value efficiency, clarity, and purpose in every project — whether it’s optimizing performance, simplifying user experience, or scaling architecture for impact. With hands-on experience at organizations like AlgoUniversity, Fox Trading, and the Asian Institute of Technology (Bangkok), I bring a strong balance of technical execution and strategic problem-solving.
