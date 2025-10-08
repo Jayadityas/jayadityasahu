@@ -101,8 +101,10 @@ const Index = () => {
           <p className="text-lg text-muted-foreground mb-6">
             A problem-solving mindset drives my approach to building intelligent systems. With leadership roles as VP of Student Gymkhana and active participation in technical clubs like Neuromancers, WebND, RISC, and Panacea, I combine curiosity, compassion, and technical excellence.
           </p>
-          <Button size="lg" className="bg-primary hover:bg-primary-dark">
-            Download Resume
+          <Button size="lg" className="bg-primary hover:bg-primary-dark" asChild>
+            <a href="/Jayaditya-Sahu-Resume.pdf" download="Jayaditya-Sahu-Resume.pdf">
+              Download Resume
+            </a>
           </Button>
         </div>
       </section>
@@ -114,7 +116,7 @@ const Index = () => {
           <p className="text-lg text-muted-foreground mb-8">
             Looking for opportunities in software development, ML, and AI research. Let's build something amazing together!
           </p>
-          <div className="flex justify-center gap-4 mb-8">
+          <div className="flex justify-center mb-8">
             <Dialog open={isContactDialogOpen} onOpenChange={setIsContactDialogOpen}>
               <DialogTrigger asChild>
                 <Button size="lg" className="bg-primary hover:bg-primary-dark">
@@ -131,13 +133,6 @@ const Index = () => {
                 <ContactForm onSuccess={() => setIsContactDialogOpen(false)} />
               </DialogContent>
             </Dialog>
-            <Button 
-              size="lg" 
-              variant="outline"
-              asChild
-            >
-              <a href="mailto:jayaditya.sahu@gmail.com">Direct Email</a>
-            </Button>
           </div>
         </div>
       </section>
