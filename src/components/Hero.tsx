@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Download } from "lucide-react";
 import { useEffect, useState } from "react";
-import heroPortrait from "@/assets/profile.jpg";
+import heroPortrait from "@/assets/jayaditya-profile.jpg";
 const roles = ["Software Engineer", "ML Developer", "AI Researcher", "Future Entrepreneur"];
 const Hero = () => {
   const [currentRole, setCurrentRole] = useState(0);
