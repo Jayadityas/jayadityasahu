@@ -78,17 +78,17 @@ const Index = () => {
           <div className="max-w-4xl mx-auto space-y-4">
             <Card className="p-6 hover-lift">
               <p className="text-muted-foreground">
-                • Became <span className="font-semibold text-foreground">National Semi-finalist</span> in <span className="font-semibold text-foreground">Flipkart Grid 7.0</span>
+                • Became <span className="font-semibold text-foreground">National Semi-finalist</span> in <span className="font-semibold text-foreground">Flipkart Grid 7.0</span> <a href="https://drive.google.com/file/d/1HxKh2aIJ7jIFLwFXXNLHbYVW6VYQwcRt/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Certificate of Achievement</a>
               </p>
             </Card>
             <Card className="p-6 hover-lift">
               <p className="text-muted-foreground">
-                • Solved Over <span className="font-semibold text-foreground">460+ Coding Questions</span> on Different Coding Websites, <span className="font-semibold text-foreground">1780+ rating</span> in Leetcode, <a href="https://www.codolip.com" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Codolip profile</a>
+                • Solved Over <span className="font-semibold text-foreground">460+ Coding Questions</span> on Different Coding Websites, <span className="font-semibold text-foreground">1780+ rating</span> in Leetcode, <a href="https://codolio.com/profile/JayadityaSahu" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Codolio profile</a>
               </p>
             </Card>
             <Card className="p-6 hover-lift">
               <p className="text-muted-foreground">
-                • <span className="font-semibold text-foreground">Global Rank 1133</span> in <span className="font-semibold text-foreground">Meta Hacker Cup 2025</span> <a href="#" className="text-primary hover:underline">Certificate of Achievement</a>
+                • <span className="font-semibold text-foreground">Global Rank 1133</span> in <span className="font-semibold text-foreground">Meta Hacker Cup 2025</span> <a href="https://drive.google.com/file/d/1PIvqy-xXviDGEOGzBTB3GwhSK9G0ridC/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Certificate of Achievement</a>
               </p>
             </Card>
             <Card className="p-6 hover-lift">
