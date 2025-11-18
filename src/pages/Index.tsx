@@ -71,8 +71,37 @@ const Index = () => {
         </div>
       </section>
 
+      {/* Achievements */}
+      <section id="achievements" className="py-20 px-4 sm:px-6 lg:px-8 bg-muted/30">
+        <div className="max-w-7xl mx-auto">
+          <h2 className="text-4xl font-bold text-center mb-12">Achievements</h2>
+          <div className="max-w-4xl mx-auto space-y-4">
+            <Card className="p-6 hover-lift">
+              <p className="text-muted-foreground">
+                • Became <span className="font-semibold text-foreground">National Semi-finalist</span> in <span className="font-semibold text-foreground">Flipkart Grid 7.0</span>
+              </p>
+            </Card>
+            <Card className="p-6 hover-lift">
+              <p className="text-muted-foreground">
+                • Solved Over <span className="font-semibold text-foreground">460+ Coding Questions</span> on Different Coding Websites, <span className="font-semibold text-foreground">1780+ rating</span> in Leetcode, <a href="https://www.codolip.com" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Codolip profile</a>
+              </p>
+            </Card>
+            <Card className="p-6 hover-lift">
+              <p className="text-muted-foreground">
+                • <span className="font-semibold text-foreground">Global Rank 1133</span> in <span className="font-semibold text-foreground">Meta Hacker Cup 2025</span> <a href="#" className="text-primary hover:underline">Certificate of Achievement</a>
+              </p>
+            </Card>
+            <Card className="p-6 hover-lift">
+              <p className="text-muted-foreground">
+                • Achieved <span className="font-semibold text-foreground">Global Rank 632</span> in <span className="font-semibold text-foreground">Leetcode Weekly Contest 473</span>
+              </p>
+            </Card>
+          </div>
+        </div>
+      </section>
+
       {/* Skills */}
-      <section id="skills" className="py-20 px-4 sm:px-6 lg:px-8 bg-muted/30">
+      <section id="skills" className="py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-4xl font-bold text-center mb-12">Skills</h2>
           <div className="grid md:grid-cols-4 gap-6">
